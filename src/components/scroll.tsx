@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import "./Scroll.css";
+import "./scroll.css";
 
 const Scroll = () => {
   return (
