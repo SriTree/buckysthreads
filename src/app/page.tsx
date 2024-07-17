@@ -12,7 +12,7 @@ export default function Home() {
           <div className="col-span-2 px-6 lg:px-0 lg:pt-4">
             <div className="relative mx-auto text-center lg:text-left flex flex-col items-center lg:items-start">
               <div className="absolute w-28 lg:w-32 lg:left-[-.8rem] lg:top-[-4.2rem] transform lg:scale-150 hidden lg:block">
-                <img src="/logob.png" className="w-full" />
+                <img src="/logoB.png" className="w-full" />
               </div>
               <h1 className="relative w-fit tracking-tight text-balance mt-16 font-bold !leading-tight text-gray-900 text-5xl md:text-6xl lg:text-7xl">
                 Your Ideas on{" "}
