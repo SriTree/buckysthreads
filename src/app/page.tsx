@@ -3,7 +3,6 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import TShirt from "@/components/TShirt";
 import { Check, Star } from "lucide-react";
 import Scroll from "@/components/scroll"; // Import the new component
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -13,13 +12,7 @@ export default function Home() {
           <div className="col-span-2 px-6 lg:px-0 lg:pt-4">
             <div className="relative mx-auto text-center lg:text-left flex flex-col items-center lg:items-start">
               <div className="absolute w-28 lg:w-32 lg:left-[-.8rem] lg:top-[-4.2rem] transform lg:scale-150 hidden lg:block">
-                <Image
-                  src="/logob.png"
-                  className="w-full"
-                  width={100}
-                  height={100}
-                  alt="Logo"
-                />
+                <img src="/logob.png" className="w-full" />
               </div>
               <h1 className="relative w-fit tracking-tight text-balance mt-16 font-bold !leading-tight text-gray-900 text-5xl md:text-6xl lg:text-7xl">
                 Your Ideas on{" "}
@@ -29,7 +22,7 @@ export default function Home() {
               <p className="mt-8 text-lg lg:pr-10 max-w-prose text-center lg:text-left text-balance md:text-wrap">
                 Highlight your brand, group, or event with{" "}
                 <span className="font-semibold">one-of-one</span> custom
-                apparel. Bucky&apos;s Threads brings your ideas to life with
+                apparel. Bucky's Threads brings your ideas to life with
                 personalized wear!
               </p>
               <ul className="mt-8 space-y-2 text-left font-medium flex flex-col items-center sm:items-start">
@@ -55,40 +48,30 @@ export default function Home() {
 
               <div className="mt-12 flex flex-col sm:flex-row items-center sm:items-start gap-5">
                 <div className="flex -space-x-4">
-                  <Image
+                  <img
                     className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-100"
                     src="/users/user-1.png"
                     alt="user image"
-                    width={40}
-                    height={40}
                   />
-                  <Image
+                  <img
                     className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-100"
                     src="/users/user-2.png"
                     alt="user image"
-                    width={40}
-                    height={40}
                   />
-                  <Image
+                  <img
                     className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-100"
                     src="/users/user-3.png"
                     alt="user image"
-                    width={40}
-                    height={40}
                   />
-                  <Image
+                  <img
                     className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-100"
                     src="/users/user-4.jpg"
                     alt="user image"
-                    width={40}
-                    height={40}
                   />
-                  <Image
+                  <img
                     className="inline-block object-cover h-10 w-10 rounded-full ring-2 ring-slate-100"
                     src="/users/user-5.jpg"
                     alt="user image"
-                    width={40}
-                    height={40}
                   />
                 </div>
 
@@ -111,19 +94,13 @@ export default function Home() {
 
           <div className="col-span-full lg:col-span-1 w-full flex justify-center px-8 sm:px-16 md:px-0 mt-32 lg:mx-0 lg:mt-20 h-fit">
             <div className="relative md:max-w-xl">
-              <Image
+              <img
                 src="/your-image.png"
                 className="absolute w-40 lg:w-52 left-[30rem] transform -translate-x-1/2 -top-16 select-none hidden lg:block xl:block"
-                width={100}
-                height={100}
-                alt="Your image"
               />
-              <Image
+              <img
                 src="/line.png"
                 className="absolute w-14 left-16 bottom-10 md:w-16 md:left-20 md:bottom-12 lg:w-24 lg:left-24 lg:bottom-12 select-none"
-                width={56}
-                height={56}
-                alt="Line"
               />
               <TShirt
                 className="w-[24rem] sm:w-[28rem] md:w-[28rem] lg:w-[30rem] xl:w-[37rem] "
@@ -162,20 +139,18 @@ export default function Home() {
               </div>
               <div className="text-lg leading-8">
                 <p>
-                  &quot;We love our crewnecks, so soft and comfy it&apos;s hard
-                  to not wear it every day. And the whole{" "}
+                  "We love our crewnecks, so soft and comfy its hard to not wear
+                  it everyday. And the whole{" "}
                   <span className="p-0.5 bg-red-900 text-white">
                     design process was so easy!!
                   </span>
                 </p>
               </div>
               <div className="flex gap-4 mt-2">
-                <Image
+                <img
                   className="rounded-full h-12 w-12 object-cover"
                   src="/users/user-1.png"
                   alt="user"
-                  width={48}
-                  height={48}
                 />
                 <div className="flex flex-col">
                   <p className="font-semibold">Badger AKPsi</p>
@@ -198,21 +173,19 @@ export default function Home() {
               </div>
               <div className="text-lg leading-8">
                 <p>
-                  &quot;Absolutely killed it with the design. Went,{" "}
+                  "Absolutely killed it with the design. Went,{" "}
                   <span className="p-0.5 bg-red-900 text-white">
                     above and beyond our expectations.
                   </span>{" "}
-                  Couldn&apos;t have asked for better sweatshirts for our Spring
+                  Couldn't have asked for better swetahsorts for our Spring
                   Formal!
                 </p>
               </div>
               <div className="flex gap-4 mt-2">
-                <Image
+                <img
                   className="rounded-full h-12 w-12 object-cover"
                   src="/users/user-4.jpg"
                   alt="user"
-                  width={48}
-                  height={48}
                 />
                 <div className="flex flex-col">
                   <p className="font-semibold">Pike</p>

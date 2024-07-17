@@ -1,6 +1,5 @@
 import { cn } from "@/lib/utils";
 import { HTMLAttributes, CSSProperties } from "react";
-import Image from "next/image";
 
 interface TShirtProps extends HTMLAttributes<HTMLDivElement> {
   imgSrc: string;
@@ -25,22 +24,17 @@ const TShirt = ({
       {...props}
     >
       <div className="relative z-10 w-full h-full">
-        <Image
+        <img
           src={dark ? "/shirt-template-light.png" : "/shirt-template-dark.png"}
           className="pointer-events-none select-none w-full h-full object-cover"
           alt="t-shirt image"
-          layout="fill"
-          objectFit="cover"
         />
       </div>
       <div className="absolute inset-0 z-20 flex items-center justify-center p-10 md:p-20 lg:p-24">
-        <Image
-          className="object-contain"
+        <img
+          className="object-contain w-[45%] h-[45%]"
           src={imgSrc}
           alt="overlaying t-shirt image"
-          layout="intrinsic"
-          width={500}
-          height={500}
         />
       </div>
     </div>
