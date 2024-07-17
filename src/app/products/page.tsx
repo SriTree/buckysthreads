@@ -52,7 +52,7 @@ const Home: React.FC = async () => {
     <Fragment>
       <div className="text-center">
         <h1 className="font-bold leading-tight text-palette-primary text-5xl mt-4 py-2 sm:py-4">
-          Bucky's Signature Collection
+          Buckys Signature Collection
         </h1>
         <p className="px-2 text-lg text-gray-600">
           Represent your favorite college town with one-of-one apparel
