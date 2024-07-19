@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import "./logoscroll.css";
+import "./LogoScroll.css";
 
 const LogoScroll = () => {
   return (
