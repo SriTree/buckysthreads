@@ -1,5 +1,6 @@
-const domain = process.env.SHOPIFY_STORE_DOMAIN!;
-const storefrontAccessToken = process.env.SHOPIFY_STORE_FRONT_ACCESS_TOKEN!;
+const domain = process.env.NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN!;
+const storefrontAccessToken =
+  process.env.NEXT_PUBLIC_SHOPIFY_STORE_FRONT_ACCESS_TOKEN!;
 
 interface ShopifyResponse<T> {
   data: T;
@@ -71,6 +72,31 @@ export const ProductsInCollection = gql`
               }
             }
           }
+        }
+      }
+    }
+  }
+`;
+
+export const ProductsByHandle = gql`
+  query ProductsByHandle($handle: String!) {
+    productByHandle(handle: $handle) {
+      id
+      title
+      handle
+      tags
+      images(first: 10) {
+        edges {
+          node {
+            url
+            width
+            height
+          }
+        }
+      }
+      priceRange {
+        maxVariantPrice {
+          amount
         }
       }
     }

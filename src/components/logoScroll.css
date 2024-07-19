@@ -1,0 +1,98 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.logowrapper {
+  width: 90%; /* Same as scroll.css */
+  max-width: 1536px; /* Same as scroll.css */
+  margin: 0 auto;
+  position: relative;
+  height: 60px; /* Even thinner height for logos */
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 1) 90%,
+    rgba(0, 0, 0, 0)
+  );
+  background-color: white; /* Background white */
+  border-radius: 10px; /* Rounded corners */
+}
+
+@keyframes logoScrollLeft {
+  to {
+    left: -120px;
+  }
+}
+
+.logowrapper:hover .logoitem {
+  animation-play-state: paused;
+}
+
+.logoitem {
+  width: 60px; /* Adjusted for smaller logos */
+  height: 60px; /* Adjusted for smaller logos */
+  background-color: white; /* Container background white */
+  border-radius: 10%;
+  position: absolute;
+  left: max(calc(100px * 10), 100%); /* Adjusted for more logos */
+  animation-name: logoScrollLeft;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensures images are clipped */
+}
+
+.logoitem img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensures the image fits inside the container */
+}
+
+.logoitem1 {
+  animation-delay: calc(30s / 7 * (7 - 1) * -1); /* Adjusted for 7 items */
+}
+
+.logoitem2 {
+  animation-delay: calc(30s / 7 * (7 - 2) * -1); /* Adjusted for 7 items */
+}
+
+.logoitem3 {
+  animation-delay: calc(30s / 7 * (7 - 3) * -1); /* Adjusted for 7 items */
+}
+
+.logoitem4 {
+  animation-delay: calc(30s / 7 * (7 - 4) * -1); /* Adjusted for 7 items */
+}
+
+.logoitem5 {
+  animation-delay: calc(30s / 7 * (7 - 5) * -1); /* Adjusted for 7 items */
+}
+
+.logoitem6 {
+  animation-delay: calc(30s / 7 * (7 - 6) * -1); /* Adjusted for 7 items */
+}
+
+.logoitem7 {
+  animation-delay: calc(30s / 7 * (7 - 7) * -1); /* Adjusted for 7 items */
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  .logowrapper {
+    width: 70%; /* Original size for larger screens */
+    height: 100px; /* Adjusted height for larger screens */
+  }
+
+  .logoitem {
+    width: 100px; /* Adjusted size for larger screens */
+    height: 100px; /* Adjusted size for larger screens */
+    left: max(calc(180px * 10), 100%); /* Adjusted for more logos */
+  }
+}
