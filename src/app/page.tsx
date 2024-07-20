@@ -303,42 +303,44 @@ const HomePage: React.FC = () => {
                   <span className="bg-red-900 px-2 text-white">Bucky's</span>{" "}
                   Collection
                 </h2>
-                <p className="text-[13px] md:text-lg text-gray-700 -mb-12">
+                <p className="text-[13px] md:text-lg text-gray-700 mb-4">
                   Looking for unique designs? Bucky's Collection captures the
                   essence of America's top college town. Whether for game day or
                   a gift, find your perfect Badger-themed merch here.
                 </p>
               </div>
-              <div className="w-full lg:w-1/3 lg:flex lg:justify-end lg:items-start mb-8 lg:mb-0">
+              <div className="w-full lg:w-1/3 lg:flex lg:justify-end lg:items-start mb-0 lg:mb-0 -mt-20">
                 <img
-                  src="/designs/madtown_feature.png"
+                  src="/madtown_feature.png"
                   alt="Featured Madtown Design"
-                  className="w-full h-auto rounded-lg shadow-md"
+                  className="w-full h-auto object-cover rounded-lg mb-4 lg:mb-0"
+                  style={{ maxHeight: "400px" }}
                 />
               </div>
             </div>
-            <div className="max-w-7xl mx-auto px-6 lg:px-0 flex justify-between gap-6 lg:gap-8">
+            <div className="max-w-7xl mx-auto px-6 lg:px-0 flex flex-col gap-6 lg:flex-row lg:justify-between lg:gap-8 -mt-28">
               {error && <p className="text-red-500">{error}</p>}
-              <div className="flex-1 lg:-ml-6">
+              <div className="flex-1">
                 <ProductCard product={products[0]} />
               </div>
-              <div className="flex-1 lg:ml-6 lg:mr-6 flex justify-center">
+              <div className="flex-1">
                 <ProductCard product={products[1]} />
               </div>
-              <div className="flex-1 lg:-mr-6">
+              <div className="flex-1">
                 <ProductCard product={products[2]} />
               </div>
             </div>
-            <div className="w-full flex justify-center -mt-24">
+            <div className="w-full flex justify-center -mt-12">
               <a
                 href="/products"
-                className="bg-red-900 text-white text-lg font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-red-800 transition duration-300"
+                className="bg-red-900 text-white text-sm font-semibold py-4 px-8 rounded-lg shadow-md hover:bg-red-800 transition duration-300"
               >
                 Shop the Collection
               </a>
             </div>
           </MaxWidthWrapper>
         </section>
+
         <section className="bg-gradient-to-b from-red-50 to-red-300 py-24"></section>
       </div>
     </Fragment>
