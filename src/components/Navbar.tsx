@@ -15,6 +15,12 @@ const Navbar: React.FC = () => {
               Threads
             </span>
           </Link>
+          <Link
+            href="/auth/sign-in"
+            className="z-40 font-semibold text-[11px] sm:text-base md:text-base lg:text-base"
+          >
+            Sign In
+          </Link>
         </div>
       </MaxWidthWrapper>
     </nav>
